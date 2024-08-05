@@ -1,0 +1,22 @@
+{
+	"semi": true,
+	"trailingComma": "all",
+	"singleQuote": true,
+	"printWidth": 100,
+	"jsxBracketSameLine": true,
+	"useTabs": true,
+	"tabWidth": 2,
+	"importOrder": [
+		"react",
+		"<THIRD_PARTY_MODULES>",
+		"^components(.*)$",
+		"^containers(.*)$",
+		"^hooks(.*)$",
+		"^routes(.*)$",
+		"^utils(.*)$",
+		"^types(.*)$",
+		"^[./]"
+	],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true
+}

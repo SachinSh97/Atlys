@@ -1,0 +1,20 @@
+diff --git a/node_modules/react-scripts/config/webpack.config.js b/node_modules/react-scripts/config/webpack.config.js
+index e465d8e..cf82f36 100644
+--- a/node_modules/react-scripts/config/webpack.config.js
++++ b/node_modules/react-scripts/config/webpack.config.js
+@@ -53,6 +53,7 @@ const babelRuntimeEntryHelpers = require.resolve(
+ const babelRuntimeRegenerator = require.resolve('@babel/runtime/regenerator', {
+   paths: [babelRuntimeEntry],
+ });
++const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+ 
+ // Some apps do not need the benefits of saving a web request, so not inlining the chunk
+ // makes for a smoother build process.
+@@ -344,6 +345,7 @@ module.exports = function (webpackEnv) {
+           babelRuntimeEntryHelpers,
+           babelRuntimeRegenerator,
+         ]),
++        new TsconfigPathsPlugin(),
+       ],
+     },
+     module: {
